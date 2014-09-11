@@ -1,14 +1,122 @@
 \documentclass{article}
+%\usepackage{pdflatex}
+\title {Hall A Deeply Virtual Compton Scattering Operating Safety Procedure}
+
+\author {Alexandre Camsonne}
+
 
 \begin{document}
+\maketitle
+\section{Scope}
+This document describe the additions to the standard equipement relevant to the Hall A DVCS experiment. This document will be kept with the experiment documents in Counting House and MCC. The signed copy with list of authorized people for motion of the detector will be kept at the counting house.
+\section{Equipement description}
+\subsection{Hall A Deeply Virtual Compton Scattering calorimeter}
+The Hall A Deeply Virtual Compton Scattering is using an additionnal lead fluoride calorimeter to detect a real photon from the DVCS in addition to the standard equipment. It is constituted of a 13x16 matrix of Lead Fluoride blocks readout by PMTs. Each module weight about 3 pounds giving a full calorimeter weight of about 600 lbs.
+\subsection{Electronics}
+ A custom electronics will be used for the readout consiting of a VME trigger module associated with an analog sampling readout modules. The electronics will be located in the Left Spectrometer at the first level in a rack containing 3 VME64X crates, one trigger module, a NIM crate and a mini VME crate.
+The signal is sent from the calorimeter to the spectrometer using RG213 cables.
+\section{Hazard analysis and mitigation}
+\subsection{Fall hazard from detector platform}
+The detector is placed on the Big Bite stand which is rotating around the pivot target. This places the detector at a heigth of . Railing will be placed around the detector to prevent accidental fall. They are to remain in place in standard use. 
 
-\section{Hall A Deeply Virtual Compton Scattering calorimeter}
+\subsubsection{Electrical hazard}
+The detector PMT are supplied with high voltage with Lecryo 1461N. Voltage is limited by hardware to be less than 900 V. The high voltage power supply are limited to 2.5 mA. This puts the detector in class 1.
+The custom electronics uses 5V power supplies with current less than 50 A which also puts it in the class 1 category. 
+High voltage power should be turned off when accessing the detector.
+The main supply transformer is grounded.
 
-\section{Hazard analysis}
+\subsubsection{Fire hazard}
+The detector has powered electronics and cables that could burn in case of spark.
+Temperature sensor will be placed inside of the calorimeter box and monitored when in operation. The Hall smoke detector and VESDA will also detect any fire occuring.
 
-\section{Calorimeter motion (expert only)}
+\subsubsection{Equipment hazard}
+Motion of the detector has to be done carefully by expert in order to avoid damages to equipment. A checklist and procedure to be followed will be detailed in this document.
+The calorimeter is on rails to allow moving it back for calibration purpose. Since it is about 600 pounds it should be move slowly to avoid damaging the stops at each end of the rails. The calorimeter will be clamped in place after each motion on the rail.
+
+\subsection{Hazard mitigation}
+With the reading of the OSP and the railings in place. We do not expect major damage or injury to occur. The most hazourdous part being the detector motion which will only be carried out by experts.
 
 \section{Calorimeter operation}
+In regular operation, the low voltage power supplies should be on.
+High voltage should be turned on. During the data taking the anode currents
+will be monitored using EPICS and anode current should be maintained at less than 30 uA to ensure the life time of the photomultipliers.
 
+
+\section{High resolution spectrometer motion}
+The BigBite / DVCS stand can interfere with spectrometer motion going to smaller angle. Check with the run coordinator if the left spectrometer has to be moved to smaller angle if an access is required to check for interferences.
+
+
+\section{High resolution spectrometer access}
+The RG213 cable are going to the DVCS electronics under the right door of the Left spectrometer. The door will be disabled closed for the running, if it is operating care should be taken when opening and closing the door in order to avoid breaking the cables at the patch panel inside of the detector hut.
+The patch panel taking most of the space on the beam on the right side of the spectrometer, the detector stack has to be access from the left side and from the back.
+
+\section{Calorimeter motion (expert only)}
+The detector is placed on a rotating platform that can rotate around the pivot axis. A come-along or motorized chain will be used to do angular motion of the calorimeter. The motion will be only be done by only expert people who were briefed on how to do the motion. The motion should be done with an expert and a spotter for interference ( helper from the hall or person on shift )
+\begin{itemize}
+\item check for possible interference with Left or Right spectrometer
+\item check for any items which could be tied directly to the stand and scattering chamber
+\item actionate the come along or motor until position is reached, if the detector get stuck during the motion, stop and check for any possible interference and try again. If it gets stuck again call the run coordinator who will assess if more technical help is needed.
+\end{itemize}
+
+The list of people following are allowed to move the detector.
+Gatekeepers are Alexandre Camsonne, Ed Folts, Douglas Higinbotham, Jack Segal, Nert Manzlak 
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Name & Date & Signature & Gate keeper\\
+\hline
+Ed Folts & 09/10/2014 & &\\
+\hline
+Jack Segal & 09/10/2014 & &\\
+\hline
+Jessie Butler & 09/10/2014 & &\\
+\hline
+Heidi Fansler& 09/10/2014 & &\\
+\hline
+David Galinski& 09/10/2014 & &\\
+\hline
+Andrew Lumanog& 09/10/2014 & &\\
+\hline
+Mahlon Long & 09/10/2014 & &\\
+\hline
+Alexandre Camsonne & 09/10/2014 & &\\
+\hline
+Carlos Munoz & 09/10/2014 & &\\
+\hline
+Julie Roche & 09/10/2014 & &\\
+\hline
+Charles Hyde & 09/10/2014 & &\\
+\hline
+Paul King  & 09/10/2014 & &\\
+\hline
+  &  & &\\
+\hline
+  & & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  & & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+  &  & &\\
+\hline
+\end{tabular}
 
 \end{document}
